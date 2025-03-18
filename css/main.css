@@ -1,22 +1,20 @@
 @import url("./animations.css");
 
-body {
-  background: linear-gradient(45deg, rgb(5, 5, 5), rgb(57, 57, 109));
-  background-size: 300% 100%;
-  animation: spinning-background 4s linear infinite alternate;
-  color: whitesmoke;
+html {
+  scroll-snap-type: y mandatory;
+  user-select: none;
 }
 
-.button-theme {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 50px;
+body {
+  background: var(--background-color);
+  background-size: 400% 400%;
+  animation: spinning-background 15s ease-in infinite;
+  color: var(--text-color);
 }
 
 .container {
   height: 100vh;
-  user-select: none;
+  scroll-snap-align: start;
 }
 
 .main-container {
@@ -51,10 +49,10 @@ body {
 
     a {
       text-decoration: none;
-      color: whitesmoke;
+      color: var(--text-color);
 
       :hover {
-        color: rgba(245, 245, 245, 0.651);
+        color: var(--hover-color);
       }
     }
   }
@@ -68,15 +66,18 @@ body {
 
   h2 {
     text-align: center;
-    font-size: 64px;
+    font-size: 48px;
   }
 
   p {
-    text-justify: inter-word;
+    text-align: justify;
     padding: 10px;
+    margin-inline: 10px;
     max-width: 700px;
   }
-}
 
-.projects-container {
+  img {
+    min-width: 350px;
+    max-width: 80%;
+  }
 }

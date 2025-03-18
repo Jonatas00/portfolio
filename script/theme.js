@@ -1,3 +1,0 @@
-function changeTheme() {
-  alert("trocando");
-}

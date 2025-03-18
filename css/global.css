@@ -2,6 +2,43 @@
 
 @import url("./main.css");
 
+:root {
+  --background-color: linear-gradient(90deg, #000000, #251d36, #000000);
+  --text-color: whitesmoke;
+  --hover-color: rgba(245, 245, 245, 0.651);
+  --button-image: url(../assets/svg/moon.svg);
+  .button-theme {
+    filter: invert(1);
+  }
+}
+
+.light-theme {
+  --background-color: linear-gradient(90deg, #e2e2e2, #7e7e7e, #e2e2e2);
+  --text-color: rgb(17, 17, 17);
+  --hover-color: rgba(26, 26, 26, 0.651);
+  --button-image: url(../assets/svg/sun.svg);
+  .button-theme {
+    filter: invert(0);
+  }
+}
+
+.button-theme {
+  background: var(--button-image) no-repeat left center;
+  background-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.button-theme:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;

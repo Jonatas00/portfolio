@@ -1,8 +1,17 @@
 function changeTheme() {
-  let button = document.querySelector(".button-theme");
-  let body = document.querySelector("body");
+  const currentTheme = document.body.classList.contains("light-theme")
+    ? "light-theme"
+    : "dark-theme";
 
-  body.classList.toggle("light-theme");
+  // Determine the new theme to switch to
+  const newTheme = currentTheme == "light-theme" ? "dark-theme" : "light-theme";
 
-  button.classList.toggle("fa-moon");
+  document.body.classList.replace(currentTheme, newTheme);
+
+  localStorage.setItem("theme", newTheme);
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const currentTheme = localStorage.getItem("theme") || "light-theme";
+  document.body.classList.add(currentTheme);
+});

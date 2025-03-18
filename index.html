@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
-    <div id="main" class="main-container container">
-        <!-- Botão para troca de tema -->
-        <i class="button-theme fa-solid fa-moon fa-2x" onclick="changeTheme()"></i>
+    <!-- Botão para troca de tema -->
+    <button class="button-theme" onclick="changeTheme()"></button>
+    <div class="main-container container">
       <div class="title">
         <h1>Jonatas Rodrigues</h1>
-        <p>Backend Developer</p>
+        <p>Desenvolvedor Backend</p>
       </div>
       <div class="links">
         <a href="https://github.com/Jonatas00" target="_blank">
@@ -26,22 +26,24 @@
         </a>
       </div>
     </div>
-    <div class="aboutme-container container">
-      <h2 class="title">About me</h2>
-      
+    <div class="aboutme-container container"">
+      <h2 class="title">Sobre mim</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam libero porro laborum illo id facilis rem nulla ex provident eum adipisci nostrum in, incidunt deserunt architecto voluptatibus nobis dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. In blanditiis iste repudiandae, asperiores autem facilis minima, eius, nostrum distinctio consequuntur at praesentium nesciunt doloremque. Id sapiente corrupti natus vero adipisci!
       </p>
+      <div id="skills"></div>
     </div>
     <div class="projects-container container">
       <h2>My projects</h2>
-      <p>meuis projetos</p>
+      <p>Meus projetos</p>
     </div>
 
     <script
       src="https://kit.fontawesome.com/6b2d2b39a5.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./script/theme.js"></script>
+
+    <script src="./scripts/skillBadge.js"></script>
+    <script src="./scripts/themeChange.js"></script>
   </body>
 </html>

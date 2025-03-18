@@ -1,72 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
+@import url("./animations.css");
 
 body {
-  overflow-x: hidden;
-  background: linear-gradient(45deg, rgb(5, 5, 5), rgb(50, 50, 97));
-  background-size: 200% 100%;
+  background: linear-gradient(45deg, rgb(5, 5, 5), rgb(57, 57, 109));
+  background-size: 300% 100%;
   animation: spinning-background 4s linear infinite alternate;
-}
-
-@keyframes spinning-background {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
-}
-
-.container {
-  height: 100vh;
-  min-width: 400px;
-  max-width: 80%;
-  display: flex;
-  justify-self: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: whitesmoke;
-  user-select: none;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 80%;
-
-  h1 {
-    text-align: center;
-    font-size: 64px;
-  }
-
-  p {
-    text-wrap: nowrap;
-    font-size: 25px;
-  }
-}
-
-.navbar {
-  width: 80%;
-  display: flex;
-  padding: 15px;
-  justify-content: space-between;
-
-  a {
-    text-decoration: none;
-    color: whitesmoke;
-
-    :hover {
-      color: rgba(245, 245, 245, 0.651);
-    }
-  }
 }
 
 .button-theme {
@@ -74,4 +12,71 @@ body {
   top: 0;
   right: 0;
   padding: 50px;
+}
+
+.container {
+  height: 100vh;
+  user-select: none;
+}
+
+.main-container {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 80%;
+
+    h1 {
+      text-align: center;
+      font-size: 64px;
+    }
+
+    p {
+      text-wrap: nowrap;
+      font-size: 25px;
+    }
+  }
+
+  .links {
+    width: 80%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+
+      :hover {
+        color: rgba(245, 245, 245, 0.651);
+      }
+    }
+  }
+}
+
+.aboutme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  h2 {
+    text-align: center;
+    font-size: 64px;
+  }
+
+  p {
+    text-justify: inter-word;
+    padding: 10px;
+    max-width: 700px;
+  }
+}
+
+.projects-container {
 }

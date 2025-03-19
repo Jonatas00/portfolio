@@ -9,7 +9,7 @@ html {
 body {
   background: var(--background-color);
   background-size: 400% 400%;
-  animation: spinning-background 15s ease-in infinite;
+  animation: spinning-background 15s normal infinite;
   color: var(--text-color);
 }
 
@@ -18,7 +18,7 @@ body {
   scroll-snap-align: start;
 }
 
-.main-container {
+#main-container {
   display: flex;
   justify-self: center;
   flex-direction: column;
@@ -43,7 +43,7 @@ body {
   }
 
   .links {
-    width: 80%;
+    max-width: 500px;
     display: flex;
     padding: 15px;
     justify-content: space-between;

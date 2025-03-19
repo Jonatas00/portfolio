@@ -1,3 +1,8 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const currentTheme = localStorage.getItem("theme") || "dark-theme";
+  document.body.classList.add(currentTheme);
+});
+
 function changeTheme() {
   const currentTheme = document.body.classList.contains("light-theme")
     ? "light-theme"
@@ -11,7 +16,3 @@ function changeTheme() {
   localStorage.setItem("theme", newTheme);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  const currentTheme = localStorage.getItem("theme") || "light-theme";
-  document.body.classList.add(currentTheme);
-});

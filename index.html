@@ -9,30 +9,31 @@
   <link rel="stylesheet" href="css/global.css" />
 </head>
 
-<body>
+<body onload="loadBadges()">
   <!-- Botão para troca de tema -->
   <button class="button-theme" onclick="changeTheme()"></button>
-  <div id="main-container" class="container">
-    <div class="title">
+
+  <main id="main-container" class="container">
+    <section class="title">
       <h1>Jonatas Rodrigues</h1>
       <p>Desenvolvedor Backend</p>
 
-      <div class="links">
+      <nav class="links">
         <a href="https://github.com/Jonatas00" target="_blank">
           <i class="fa-brands fa-github fa-4x"></i>
         </a>
         <a href="https://www.linkedin.com/in/jonatasrodrigues-tech/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-4x""></i>
-          <a href=" ./assets/curriculo.pdf" download="Curriculo">
-            <i class="fa-solid fa-note-sticky fa-4x"></i>
+          <i class="fa-brands fa-linkedin fa-4x"></i>
         </a>
-      </div>
-    </div>
+        <a href="./assets/curriculo.pdf" download="Curriculo">
+          <i class="fa-solid fa-note-sticky fa-4x"></i>
+        </a>
+      </nav>
+    </section>
+  </main>
 
-  </div>
-
-  <div class="aboutme-container container"">
-      <h2 class=" title">Sobre mim</h2>
+  <section class="aboutme-container container">
+    <h2 class="title">Sobre mim</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam libero porro laborum illo id facilis rem
       nulla ex provident eum adipisci nostrum in, incidunt deserunt architecto voluptatibus nobis dicta? Lorem ipsum
@@ -41,15 +42,9 @@
       adipisci!
     </p>
     <div id="skills"></div>
-  </div>
-
-  <div class="projects-container container">
-    <h2>My projects</h2>
-    <p>Meus projetos</p>
-  </div>
+  </section>
 
   <script src="https://kit.fontawesome.com/6b2d2b39a5.js" crossorigin="anonymous"></script>
-
   <script src="./scripts/Scroll.js"></script>
   <script src="./scripts/skillBadge.js"></script>
   <script src="./scripts/themeChange.js"></script>

@@ -8,8 +8,8 @@ html {
 
 body {
   background: var(--background-color);
-  background-size: 400% 400%;
-  animation: spinning-background 15s normal infinite;
+  background-size: 500%;
+  animation: animated-background 10s infinite;
   color: var(--text-color);
 }
 

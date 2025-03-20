@@ -3,20 +3,22 @@
 @import url("./main.css");
 
 :root {
-  --background-color: linear-gradient(45deg, #161616, #353535);
+  --background-color: linear-gradient(45deg, #111111, #525252);
   --text-color: whitesmoke;
   --hover-color: rgba(245, 245, 245, 0.651);
   --button-image: url(../assets/svg/moon.svg);
+
   .button-theme {
     filter: invert(1);
   }
 }
 
 .light-theme {
-  --background-color: linear-gradient(90deg, #e2e2e2, #7e7e7e, #e2e2e2);
+  --background-color: linear-gradient(45deg, #c2c2c2, #f0f0f0);
   --text-color: rgb(17, 17, 17);
   --hover-color: rgba(26, 26, 26, 0.651);
   --button-image: url(../assets/svg/sun.svg);
+
   .button-theme {
     filter: invert(0);
   }

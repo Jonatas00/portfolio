@@ -20,6 +20,10 @@
   }
 }
 
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
 .button-theme {
   background: var(--button-image) no-repeat left center;
   background-size: 50px;

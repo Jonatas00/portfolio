@@ -16,6 +16,13 @@ body {
 .container {
   height: 100vh;
   scroll-snap-align: start;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  will-change: opacity;
+}
+
+.container.hidden {
+  animation: fadeOut 1s forwards;
 }
 
 #main-container {
@@ -82,3 +89,5 @@ body {
     max-width: 80%;
   }
 }
+
+/* Remover estilos relacionados aos projetos */

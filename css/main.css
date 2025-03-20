@@ -31,39 +31,44 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    max-width: 80%;
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+}
 
-    h1 {
-      text-align: center;
-      font-size: 64px;
-    }
+.title h1 {
+  text-align: center;
+  font-size: 64px;
+}
 
-    p {
-      text-wrap: nowrap;
-      font-size: 25px;
-    }
-  }
+.title p {
+  text-wrap: nowrap;
+  font-size: 25px;
+}
 
-  .links {
-    max-width: 500px;
-    display: flex;
-    padding: 15px;
-    justify-content: space-between;
+.links {
+  max-width: 500px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
 
-    a {
-      text-decoration: none;
-      color: var(--text-color);
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}
 
-      :hover {
-        color: var(--hover-color);
-      }
-    }
-  }
+.links a:hover {
+  color: var(--hover-color);
 }
 
 .aboutme-container {
@@ -71,23 +76,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
-  h2 {
-    text-align: center;
-    font-size: 48px;
-  }
-
-  p {
-    text-align: justify;
-    padding: 10px;
-    margin-inline: 10px;
-    max-width: 700px;
-  }
-
-  img {
-    min-width: 300px;
-    max-width: 80%;
-  }
 }
 
-/* Remover estilos relacionados aos projetos */
+.aboutme-container h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.aboutme-container p {
+  text-align: justify;
+  padding: 10px;
+  margin-inline: 10px;
+  max-width: 700px;
+}
+
+.aboutme-container img {
+  min-width: 300px;
+  max-width: 80%;
+}

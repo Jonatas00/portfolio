@@ -21,7 +21,6 @@ function loadBadges() {
   let img = document.createElement("img");
 
   img.src = url;
-
   const skillBadgeField = document.querySelector("#skills");
 
   skillBadgeField.appendChild(img);

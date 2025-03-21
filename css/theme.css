@@ -1,7 +1,7 @@
 :root {
-    --background-color: linear-gradient(45deg, #111111, #525252);
+    --background-color: linear-gradient(45deg, #111111, #43434e);
     --text-color: whitesmoke;
-    --hover-color: rgba(245, 245, 245, 0.651);
+    --hover-color: rgba(240, 240, 240, 0.651);
     --button-image: url(../assets/svg/moon.svg);
 
     .button-theme {
@@ -10,7 +10,7 @@
 }
 
 .light-theme {
-    --background-color: linear-gradient(45deg, #c2c2c2, #f0f0f0);
+    --background-color: linear-gradient(45deg, #c5c5c5, #ffffff);
     --text-color: rgb(17, 17, 17);
     --hover-color: rgba(26, 26, 26, 0.651);
     --button-image: url(../assets/svg/sun.svg);

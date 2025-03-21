@@ -9,7 +9,7 @@ html {
 body {
   background: var(--background-color);
   background-size: 500%;
-  animation: animated-background 5s infinite linear;
+  animation: animated-background 10s infinite linear;
   color: var(--text-color);
 }
 

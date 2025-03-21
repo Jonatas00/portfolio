@@ -60,11 +60,6 @@ body {
 .links a {
   text-decoration: none;
   color: var(--text-color);
-  user-select: none;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -ms-user-drag: none;
-  user-drag: none;
 }
 
 .links a:hover {
@@ -93,4 +88,13 @@ body {
 .aboutme-container img {
   min-width: 300px;
   max-width: 80%;
+}
+
+/* Reusable class for non-draggable elements */
+.non-draggable {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
 }

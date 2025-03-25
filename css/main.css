@@ -33,6 +33,21 @@ body {
   align-items: center;
 }
 
+.down-arrow {
+  position: absolute;
+  bottom: 100px;
+  animation: down-arrow 2s infinite;
+  background-image: url("../assets/svg/down-arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .title {
   display: flex;
   flex-direction: column;

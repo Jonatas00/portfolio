@@ -4,7 +4,7 @@
     --hover-color: rgba(240, 240, 240, 0.651);
     --button-image: url(../assets/svg/moon.svg);
 
-    .button-theme {
+    .button-theme, .down-arrow {
         filter: invert(1);
     }
 }
@@ -15,7 +15,7 @@
     --hover-color: rgba(26, 26, 26, 0.651);
     --button-image: url(../assets/svg/sun.svg);
 
-    .button-theme {
+    .button-theme, .down-arrow {
         filter: invert(0);
     }
 }

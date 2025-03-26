@@ -37,7 +37,7 @@ body {
   position: absolute;
   bottom: 100px;
   animation: down-arrow 2s infinite;
-  background-image: url("../assets/svg/down-arrow.svg");
+  background-image: var(--down-arrow-image);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50px;
@@ -61,6 +61,7 @@ body {
 }
 
 .title p {
+  margin: 10px 0;
   text-wrap: nowrap;
   font-size: 25px;
 }

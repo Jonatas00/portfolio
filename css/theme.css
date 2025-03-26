@@ -7,7 +7,9 @@
 
 	.button-theme,
 	.down-arrow {
+		opacity: 1;
 		filter: invert(1);
+		transition: opacity 0.5s, filter 0.5s;
 	}
 }
 
@@ -20,12 +22,17 @@
 	.button-theme,
 	.down-arrow {
 		filter: invert(0);
+		transition: filter 0.5s;
+		transition: opacity 0.5s, filter 0.5s;
 	}
 }
 
 body,
-i {
-	transition: background-color 0.5s, color 0.5s;
+i,
+.button-theme,
+.down-arrow {
+	opacity: 1;
+	transition: background-color 0.5s, color 0.5s, opacity 2s;
 }
 
 .button-theme {
@@ -38,6 +45,7 @@ i {
 	height: 100px;
 	border: none;
 	user-select: none;
+	z-index: 1;
 }
 
 .button-theme:hover {

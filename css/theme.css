@@ -1,53 +1,56 @@
 :root {
-    --background-color: linear-gradient(45deg, #111111, #3a3a3a);
-    --text-color: whitesmoke;
-    --hover-color: rgba(240, 240, 240, 0.651);
-    --button-image: url(../assets/svg/moon.svg);
+	--background-color: linear-gradient(45deg, #111111, #3a3a3a);
+	--text-color: whitesmoke;
+	--hover-color: rgba(240, 240, 240, 0.651);
+	--button-image: url(../assets/svg/moon.svg);
+	--down-arrow-image: url(../assets/svg/down-arrow.svg);
 
-    .button-theme, .down-arrow {
-        filter: invert(1);
-    }
+	.button-theme,
+	.down-arrow {
+		filter: invert(1);
+	}
 }
 
 .light-theme {
-    --background-color: linear-gradient(45deg, #999999, #ffffff);
-    --text-color: rgb(17, 17, 17);
-    --hover-color: rgba(26, 26, 26, 0.651);
-    --button-image: url(../assets/svg/sun.svg);
+	--background-color: linear-gradient(45deg, #999999, #ffffff);
+	--text-color: rgb(17, 17, 17);
+	--hover-color: rgba(26, 26, 26, 0.651);
+	--button-image: url(../assets/svg/sun.svg);
 
-    .button-theme, .down-arrow {
-        filter: invert(0);
-    }
+	.button-theme,
+	.down-arrow {
+		filter: invert(0);
+	}
 }
 
-body {
-    transition: background-color 0.5s, color 0.5s;
+body,
+i {
+	transition: background-color 0.5s, color 0.5s;
 }
 
 .button-theme {
-    background: var(--button-image) no-repeat center center;
-    background-size: 50%;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    border: none;
-    user-select: none;
-    z-index: 1000;
+	background: var(--button-image) no-repeat center center;
+	background-size: 50%;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 100px;
+	height: 100px;
+	border: none;
+	user-select: none;
 }
 
 .button-theme:hover {
-    cursor: pointer;
-    opacity: 0.5;
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
-    .button-theme {
-        top: 10px;
-        right: 10px;
-        width: 60px;
-        height: 60px;
-    }
+	.button-theme {
+		top: 10px;
+		right: 10px;
+		width: 60px;
+		height: 60px;
+	}
 }

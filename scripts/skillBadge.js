@@ -1,17 +1,7 @@
 function loadBadges() {
   const icons = [
-    "java",
-    "spring",
-    "go",
-    "js",
-    "vue",
-    "postgres",
-    "mysql",
-    "docker",
-    "postman",
-    "git",
-    "windows",
-    "linux",
+    "java", "spring", "go", "js", "vue", "postgres", "mysql",
+    "docker", "postman", "git", "windows", "linux",
   ].join(",");
 
   const lines = 3;

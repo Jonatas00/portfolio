@@ -48,10 +48,56 @@
     <div id="skills" class="non-draggable"></div>
   </section>
 
+  <section id="projects-container" class="projects-container container">
+    <h2 class="title">Projetos</h2>
+    <div id="projects-gallery" class="projects-gallery">
+      <div class="project">
+        <h3>auth_go</h3>
+        <p>Tecnologias usadas:</p>
+        <ul>
+          <li>Golang</li>
+          <li>Gin Gonic</li>
+          <li>GORM</li>
+          <li>JWT</li>
+          <li>Docker</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <a href="https://github.com/Jonatas00/auth_go" target="_blank">Ver repositório</a>
+      </div>
+
+      <div class="project">
+        <h3>Astemio Bot</h3>
+        <p>Tecnologias usadas:</p>
+        <ul>
+          <li>Java</li>
+        </ul>
+        <a href="https://github.com/Jonatas00/astemio" target="_blank">Ver repositório</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-container" class="contact-container container">
+    <h2 class="title">Contato</h2>
+    <p>Entre em contato comigo preenchendo o formulário abaixo.</p>
+    <form id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button>Enviar</button>
+    </form>
+  </section>
+
   <script src="https://kit.fontawesome.com/6b2d2b39a5.js" crossorigin="anonymous"></script>
   <script src="./scripts/scroll.js"></script>
   <script src="./scripts/skillBadge.js"></script>
   <script src="./scripts/themeChanger.js"></script>
+  <script src="./scripts/githubProjects.js"></script>
 </body>
 
 </html>

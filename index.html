@@ -5,93 +5,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jonatas Rodrigues</title>
-
   <link rel="stylesheet" href="css/global.css" />
 </head>
 
 <body onload="loadBadges()">
+  <!-- Botão para troca de tema -->
   <button class="button-theme" onclick="changeTheme()"></button>
 
-  <main id="main-container" class="container">
-    <section class="title">
-      <h1>Jonatas Rodrigues</h1>
-      <p>Desenvolvedor Backend</p>
+  <main>
+    <section id="main-container" class="main-container container">
+      <div class="title">
+        <h1>Jonatas Rodrigues</h1>
+        <p>Desenvolvedor Backend</p>
+        <nav class="links">
+          <a href="https://github.com/Jonatas00" target="_blank" class="non-draggable">
+            <i class="fa-brands fa-github fa-4x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jonatasrodrigues-tech/" target="_blank" class="non-draggable">
+            <i class="fa-brands fa-linkedin fa-4x"></i>
+          </a>
+          <a href="./assets/curriculo.pdf" download="Curriculo" class="non-draggable">
+            <i class="fa-solid fa-note-sticky fa-4x"></i>
+          </a>
+        </nav>
+      </div>
 
-      <nav class="links">
-        <a href="https://github.com/Jonatas00" target="_blank" class="non-draggable">
-          <i class="fa-brands fa-github fa-4x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/jonatasrodrigues-tech/" target="_blank" class="non-draggable">
-          <i class="fa-brands fa-linkedin fa-4x"></i>
-        </a>
-        <a href="./assets/curriculo.pdf" download="Curriculo" class="non-draggable">
-          <i class="fa-solid fa-note-sticky fa-4x"></i>
-        </a>
-      </nav>
+      <i class="down-arrow" href="#" target="_parent"></i>
+    </section>
 
-      <a class="down-arrow" href="#" target="_parent"></a>
+    <section id="aboutme-container" class="aboutme-container container">
+      <h2>Sobre mim</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, rem deserunt? Laborum nostrum quam beatae
+          reiciendis at, commodi quasi qui in ratione aliquam esse quidem, quis impedit totam vitae exercitationem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, voluptatum sunt non accusantium rerum
+          mollitia maxime, ut a nulla impedit, quos quae tempore omnis minus quis eveniet dignissimos quod. Dolore.
+        </p>
+      </div>
+
+      <div id="skills" class="non-draggable"></div>
+    </section>
+
+    <section id="projects-container" class="projects-container container">
+      <h2>Meus Projetos</h2>
+      <div id="projects-gallery" class="projects-gallery">
+        <div class="project">
+          <h3>auth_go</h3>
+          <p>Tecnologias usadas:</p>
+          <ul>
+            <li>Golang</li>
+            <li>Gin Gonic</li>
+            <li>GORM</li>
+            <li>JWT</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <a href="https://github.com/Jonatas00/auth_go" target="_blank">Ver repositório</a>
+        </div>
+
+        <div class="project">
+          <h3>Astemio Bot</h3>
+          <p>Tecnologias usadas:</p>
+          <ul>
+            <li>Java</li>
+          </ul>
+          <a href="https://github.com/Jonatas00/astemio" target="_blank">Ver repositório</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-container" class="contact-container container">
+      <h2 class="title">Contato</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam voluptatem non blanditiis cupiditate eos
+        aspernatur, ad magnam ut, aut est. Tempore ex facilis saepe ipsa error quis placeat ullam.</p>
+      <form class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button>Enviar</button>
+      </form>
     </section>
   </main>
-
-  <section id="aboutme-container" class="aboutme-container container">
-    <h2 class="title">Sobre mim</h2>
-    <div>
-      <p>
-        Olá! Meu nome é Jonatas e estou cursnado o 4º semestre de Análise e Desenvolvimento de Sistemas.
-        tenho o objetivo de me especializar em desenvolvimento backend.
-      </p>
-      <p>
-        Aqui estão as principais stacks que estou aprimorando:
-      </p>
-    </div>
-
-    <div id="skills" class="non-draggable"></div>
-  </section>
-
-  <section id="projects-container" class="projects-container container">
-    <h2 class="title">Projetos</h2>
-    <div id="projects-gallery" class="projects-gallery">
-      <div class="project">
-        <h3>auth_go</h3>
-        <p>Tecnologias usadas:</p>
-        <ul>
-          <li>Golang</li>
-          <li>Gin Gonic</li>
-          <li>GORM</li>
-          <li>JWT</li>
-          <li>Docker</li>
-          <li>PostgreSQL</li>
-        </ul>
-        <a href="https://github.com/Jonatas00/auth_go" target="_blank">Ver repositório</a>
-      </div>
-
-      <div class="project">
-        <h3>Astemio Bot</h3>
-        <p>Tecnologias usadas:</p>
-        <ul>
-          <li>Java</li>
-        </ul>
-        <a href="https://github.com/Jonatas00/astemio" target="_blank">Ver repositório</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact-container" class="contact-container container">
-    <h2 class="title">Contato</h2>
-    <p>Entre em contato comigo preenchendo o formulário abaixo.</p>
-    <form id="contact-form">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" />
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" />
-
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" rows="5"></textarea>
-
-      <button>Enviar</button>
-    </form>
-  </section>
 
   <script src="https://kit.fontawesome.com/6b2d2b39a5.js" crossorigin="anonymous"></script>
   <script src="./scripts/scroll.js"></script>

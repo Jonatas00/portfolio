@@ -8,7 +8,6 @@ function changeTheme() {
     ? "light-theme"
     : "dark-theme";
 
-  // Determine the new theme to switch to
   const newTheme = currentTheme == "light-theme" ? "dark-theme" : "light-theme";
 
   document.body.classList.replace(currentTheme, newTheme);

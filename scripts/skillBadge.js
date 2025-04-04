@@ -16,3 +16,5 @@ function loadBadges() {
 
   skillBadgeField.appendChild(img);
 }
+
+addEventListener(onload, loadBadges())

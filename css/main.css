@@ -1,15 +1,19 @@
+.container {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container {
-  height: 100vh;
-  scroll-snap-align: start;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+h2 {
+  font-size: 48px;
 }
+
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -41,7 +45,6 @@ main {
   height: 60px;
   border: none;
 }
-
 
 /* container principal */
 
@@ -111,11 +114,6 @@ main {
   justify-content: space-evenly;
 }
 
-#about-container h2 {
-  text-align: center;
-  font-size: 48px;
-}
-
 #about-container p {
   text-align: justify;
   padding: 10px;
@@ -126,6 +124,43 @@ main {
 #about-container img {
   min-width: 300px;
   max-width: 80%;
+}
+
+/* Projects container */
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-list {
+  display: flex;
+}
+
+.project {
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px;
+}
+
+.project h3 {
+  text-align: center;
+}
+
+.project a {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.project a:hover {
+  color: var(--hover-color);
+  text-decoration: underline solid;
 }
 
 /* classe para impedir a seleção dos elementos da página */

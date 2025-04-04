@@ -1,8 +1,35 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container {
   height: 100vh;
   scroll-snap-align: start;
   opacity: 0;
   animation: fadeIn 1s forwards;
+}
+
+.navbar {
+  justify-self: center;
+  position: fixed;
+  top: 0;
+  margin-top: 20px;
+  max-width: 90%;
+  background: rgba(var(--background-color), 0.1);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.navbar a {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+  text-decoration: underline solid;
 }
 
 /* container principal */
@@ -13,21 +40,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  margin-top: 20px;
-  max-width: 90%;
-  background: rgba(var(--background-color), 0.2);
-  backdrop-filter: blur(5px);
-  z-index: 2000;
-}
-
-.navbar a {
-  color: var(--text-color);
-  padding: 20px;
 }
 
 .title {

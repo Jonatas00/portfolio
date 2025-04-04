@@ -5,6 +5,8 @@
   animation: fadeIn 1s forwards;
 }
 
+/* container principal */
+
 #main-container {
   display: flex;
   justify-self: center;
@@ -13,19 +15,19 @@
   align-items: center;
 }
 
-.down-arrow {
-  position: absolute;
-  bottom: 100px;
-  animation: down-arrow 2s infinite;
-  background-image: var(--down-arrow-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
+.navbar {
+  position: fixed;
+  top: 0;
+  margin-top: 20px;
+  max-width: 90%;
+  background: rgba(var(--background-color), 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+}
 
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+.navbar a {
+  color: var(--text-color);
+  padding: 20px;
 }
 
 .title {
@@ -62,29 +64,48 @@
   color: var(--hover-color);
 }
 
-#aboutme-container {
+.down-arrow {
+  position: absolute;
+  bottom: 100px;
+  animation: down-arrow 2s infinite;
+  background-image: var(--down-arrow-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* container sobre */
+
+#about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
-#aboutme-container h2 {
+#about-container h2 {
   text-align: center;
   font-size: 48px;
 }
 
-#aboutme-container p {
+#about-container p {
   text-align: justify;
   padding: 10px;
   margin-inline: 10px;
   max-width: 700px;
 }
 
-#aboutme-container img {
+#about-container img {
   min-width: 300px;
   max-width: 80%;
 }
+
+/* classe para impedir a seleção dos elementos da página */
 
 .non-draggable {
   user-select: none;

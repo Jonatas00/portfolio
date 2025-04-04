@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="css/global.css" />
 </head>
 
-<body onload="loadBadges()">
+<body>
   <!-- Botão para troca de tema -->
   <button class="button-theme" onclick="changeTheme()"></button>
 
   <main>
+    <!-- Container principal -->
     <section id="main-container" class="container">
-      <nav>
-        <a href="">Sobre</a>
-        <a href="">Projetos</a>
+      <nav class="navbar">
+        <a href="#about-container">Sobre</a>
+        <a href="#projects-container">Projetos</a>
         <a href="#contact-container">Contato</a>
       </nav>
       <div class="title">
@@ -35,10 +36,11 @@
         </nav>
       </div>
 
-      <i class="down-arrow" href="#" target="_parent"></i>
+      <i class="down-arrow"></i>
     </section>
 
-    <section id="aboutme-container" class="container">
+    <!-- Container Sobre -->
+    <section id="about-container" class="container">
 
       <h2>Sobre mim</h2>
       <div>
@@ -56,9 +58,11 @@
       <div id="skills" class="non-draggable"></div>
     </section>
 
+    <!-- Container Projetos -->
     <section id="projects-container" class="">
       <h2>Meus Projetos</h2>
-      <div id="projects-gallery" class="projects-gallery">
+      <div class="projects-gallery">
+
         <div class="project">
           <h3>auth_go</h3>
           <p>Tecnologias usadas:</p>
@@ -84,6 +88,7 @@
       </div>
     </section>
 
+    <!-- Container Contatos -->
     <section id="contact-container" class="container">
       <h2 class="title">Contato</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam voluptatem non blanditiis cupiditate eos
@@ -101,6 +106,7 @@
         <button>Enviar</button>
       </form>
     </section>
+
   </main>
 
   <script src="https://kit.fontawesome.com/6b2d2b39a5.js" crossorigin="anonymous"></script>

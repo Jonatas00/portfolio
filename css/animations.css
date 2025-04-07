@@ -12,6 +12,8 @@
   }
 }
 
+/* Animação do movimento da seta no container principal */
+
 @keyframes down-arrow {
 
   0%,

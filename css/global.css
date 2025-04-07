@@ -22,7 +22,6 @@ html {
 
 body {
   overflow-x: hidden;
-
   background: var(--background-color);
   background-size: 500%;
   animation: animated-background 10s infinite linear;

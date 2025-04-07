@@ -186,8 +186,8 @@ h2 {
 }
 
 .contact-form label,
-button {
-  margin: 10px 0 5px 0;
+.contact-form button {
+  margin: 15px 0 5px 0;
 }
 
 .contact-form button:hover {

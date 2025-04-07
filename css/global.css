@@ -3,6 +3,8 @@
 @import url("./theme.css");
 @import url("./animations.css");
 
+/* Configurações Globais */
+
 * {
   margin: 0;
   padding: 0;

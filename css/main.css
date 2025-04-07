@@ -1,6 +1,8 @@
 .container {
   height: 100vh;
   scroll-snap-align: start;
+  max-width: 700px;
+  margin: 0 10px;
 }
 
 main {
@@ -60,7 +62,6 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 80%;
 }
 
 .title h1 {
@@ -75,7 +76,8 @@ h2 {
 }
 
 .links {
-  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   padding: 15px;
   justify-content: space-between;
@@ -117,8 +119,7 @@ h2 {
 #about-container p {
   text-align: justify;
   padding: 10px;
-  margin-inline: 10px;
-  max-width: 700px;
+  max-width: 100%;
 }
 
 #about-container img {
@@ -161,6 +162,27 @@ h2 {
 .project a:hover {
   color: var(--hover-color);
   text-decoration: underline solid;
+}
+
+/* Contact contaienr */
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contact-container p {
+  text-align: justify;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* classe para impedir a seleção dos elementos da página */

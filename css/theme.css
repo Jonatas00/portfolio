@@ -22,3 +22,9 @@
 		filter: invert(0);
 	}
 }
+
+/* Classe para fazer transição suave entre os temas */
+
+* {
+	transition: all 0.5s;
+}

@@ -185,6 +185,26 @@ h2 {
   width: 100%;
 }
 
+.contact-form label,
+button {
+  margin: 10px 0 5px 0;
+}
+
+.contact-form button:hover {
+  background-color: var(--hover-color);
+}
+
+.contact-form input,
+textarea,
+button {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  min-height: 40px;
+  padding: 10px;
+}
+
 /* classe para impedir a seleção dos elementos da página */
 
 .non-draggable {
